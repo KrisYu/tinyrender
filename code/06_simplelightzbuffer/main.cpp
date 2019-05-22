@@ -14,7 +14,7 @@ const int height = 600;
 const TGAColor white = TGAColor(255, 255, 255, 255);
 const TGAColor red = TGAColor(255, 0, 0, 255);
 
-Vec3f barycentric(Vec2f A, Vec2f B, Vec2f C, Vec2f P) {
+Vec3f barycentric(Vec3f A, Vec3f B, Vec3f C, Vec3f P) {
   Vec3f s[2];
   for (int i=2; i--; ) {
     s[i][0] = C[i]-A[i];
@@ -41,7 +41,7 @@ void triangle(Vec3f *pts, float *zbuffer, TGAImage &image, TGAColor color) {
   Vec3f P;
   for (P.x = bboxmin.x; P.x <= bboxmax.x; P.x++) {
     for (P.y = bboxmin.y; P.y <= bboxmax.y; P.y++) {
-      Vec3f bc_screen = barycentric(proj<2>(pts[0]), proj<2>(pts[1]), proj<2>(pts[2]), proj<2>(P));
+      Vec3f bc_screen = barycentric(pts[0], pts[1], pts[2], P);
       if (bc_screen.x < 0 || bc_screen.y < 0 || bc_screen.z < 0 ) continue;
       P.z = 0;
       for (int i=0; i<3; i++) P.z += pts[i][2]*bc_screen[i];

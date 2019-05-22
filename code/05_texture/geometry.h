@@ -62,8 +62,7 @@ template <typename T> vec<3,T> cross(vec<3,T> v1, vec<3,T> v2){
 }
 
 
-typedef vec<2,   int> Vec2i;
-typedef vec<2, float> Vec2f;
+typedef vec<2, int> Vec2i;
 typedef vec<3, float> Vec3f;
 
 #endif

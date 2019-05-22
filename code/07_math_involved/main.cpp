@@ -42,10 +42,10 @@ void viewport(int x, int y, int w, int h){
   ViewPort = Matrix::identity();
   ViewPort[0][3] = x + w/2.f;
   ViewPort[1][3] = y + h/2.f;
-  ViewPort[2][3] = 255.f/2.f;
+  ViewPort[2][3] = 1.f;
   ViewPort[0][0] = w/2.f;
   ViewPort[1][1] = h/2.f;
-  ViewPort[2][2] = 255.f/2.f;
+  ViewPort[2][2] = 1.f;
 }
 
 void projection(float coeff) {
@@ -92,10 +92,11 @@ void triangle(Vec3f *pts, float *zbuffer, TGAImage &image, TGAColor color) {
   }
 }
 
-Vec4f world2screen(Vec3f v) {
+Vec3f world2screen(Vec3f v) {
   Vec4f gl_vertex = embed<4>(v); // embed Vec3f to homogenius coordinates
   gl_vertex = ViewPort * Projection * ModelView * gl_vertex; // transform it to screen coordinates
-  return gl_vertex;
+  Vec3f v3 = proj<3>(gl_vertex/gl_vertex[3]); // transfromed vec3f vertex
+  return Vec3f(int(v3.x+.5),int(v3.y+.5),v3.z);
 }
 
 int main(int argc, char** argv){
@@ -108,24 +109,27 @@ int main(int argc, char** argv){
   float *zbuffer = new float[width*height];
   for (int i=width*height; i--; zbuffer[i] = -std::numeric_limits<float>::max());
 
+  lookat(eye, center, up);
+  viewport(width/8,  height/8, width*3/4, height*3/4);
+  projection(-1.f/3);
+
   TGAImage image(width, height, TGAImage::RGB);
 
   for (int i = 0; i < model->nfaces(); i++) {
     std::vector<int> face = model->face(i);
     Vec3f world_coords[3];
-    Vec4f screen_coords[3];
+    Vec3f screen_coords[3];
     for (int j = 0; j < 3; j++) {
       world_coords[j] = model->vert(face[j]);
       screen_coords[j] = world2screen(world_coords[j]);
-      cout << screen_coords[j] << endl;
     }
 
-    // Vec3f norm = cross(world_coords[2] - world_coords[0], world_coords[1] - world_coords[0]);
-    // norm.normalize();
-    // float intensity = light*norm;
-    // if (intensity > 0) {
-    //   triangle(screen_coords, zbuffer, image, TGAColor(intensity*255,intensity*255,intensity*255,255));
-    // }
+    Vec3f norm = cross(world_coords[2] - world_coords[0], world_coords[1] - world_coords[0]);
+    norm.normalize();
+    float intensity = light_dir*norm;
+    if (intensity > 0) {
+      triangle(screen_coords, zbuffer, image, TGAColor(intensity*255,intensity*255,intensity*255,255));
+    }
   }
 
   image.flip_vertically(); // i want to have the origin at the left bottom corner of the image
