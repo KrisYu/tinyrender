@@ -70,9 +70,12 @@ int main(int argc, char** argv){
       screen_coords[j] = world2screen(world_coords[j]);
     }
 
-
-
-    triangle(screen_coords, image, TGAColor(r,g,b,255));
+    Vec3f norm = cross(world_coords[2] - world_coords[0], world_coords[1] - world_coords[0]);
+    norm.normalize();
+    float intensity = light*norm;
+    if (intensity > 0) {
+      triangle(screen_coords, image, TGAColor(intensity*255,intensity*255,intensity*255,255));
+    }
   }
 
   image.flip_vertically(); // i want to have the origin at the left bottom corner of the image
