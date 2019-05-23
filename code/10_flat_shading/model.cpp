@@ -62,10 +62,6 @@ std::vector<int> Model::face(int idx){
   return face;
 }
 
-Vec3f Model::vert(int i){
-  return verts_[i];
-}
-
 Vec3f Model::vert(int iface, int nthvert){
   return verts_[faces_[iface][nthvert][0]];
 }

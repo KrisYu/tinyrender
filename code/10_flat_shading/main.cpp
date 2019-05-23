@@ -26,7 +26,6 @@ struct FlatShader: public IShader{
     varying_tri.set_col(nthvert, proj<3>(gl_Vertex/gl_Vertex[3])); //
     gl_Vertex = ViewPort*gl_Vertex;
     return gl_Vertex;
-    // return proj<3>(gl_Vertex/gl_Vertex[3]);
   }
 
   virtual bool fragment(Vec3f bar, TGAColor &color){

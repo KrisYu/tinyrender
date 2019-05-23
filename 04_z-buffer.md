@@ -58,6 +58,7 @@ if (intensity > 0) {
 }
 ```
 
+
 看效果：
 
 ![](images/simple_light.png)
@@ -68,7 +69,14 @@ if (intensity > 0) {
 
 更吓人了。。。。他嘴巴怎么长后面了。。
 
+[代码](https://github.com/KrisYu/tinyrender/tree/master/code/05_simplelight)
 
+compile & run：
+
+```
+$ g++ -std=c++11 main.cpp tgaimage.cpp model.cpp -o main
+$ ./main
+```
 
 ## z-buffer
 
@@ -89,10 +97,10 @@ P_z = (1 - a/c - b/c)A_z +  a/cB_z + b/cC_z, c \ne 0
 $$
 
 
-所以这里就给了我们提示，对于任意一点P，我们算出它的z值，如果z值更小，那么说明它更靠前，我们就用它来替换已经画上的点，否则我们则不更新P点。那么初始我们的P值应该是无穷大。
+所以这里就给了我们提示，对于任意一点P，我们算出它的z值，如果z值更靠近我们，那么我们就用它来替换已经画上的点，否则我们则不更新P点。
 
 
-同样我们也只用考虑画布上的所有的店的P值，可以用一个二维的数组来表示，不过我们这里偷懒，就用一维的数组，因为画布上的(x,y)点可以写成(x + y *width)，可以这样来转换:
+同样我们也只用考虑画布上的所有的点的P值，可以用一个二维的数组来表示，不过我们这里偷懒，就用一维的数组，因为画布上的(x,y)点可以写成(x + y *width)，可以这样来转换:
 
 ```C++
 int idx = x + y*width;
@@ -115,8 +123,7 @@ Vec3f world2screen(Vec3f v) {
 }
 ```
 
-第二个需要注意的点是我们物体的位置，注意物体的朝向，这里我们把z-buffer初始化为负无穷大，然后如果P.z 更大意味更靠近z=0，屏幕，所以这里是跟我们说的有一些相反。
-
+第二个需要注意的点是我们物体的位置和朝向，这里我们把z-buffer初始化为负无穷大，然后如果P.z更大意味更靠近我们。
 
 ```
 void triangle(Vec3f *pts, float *zbuffer, TGAImage &image, TGAColor color) {
@@ -150,9 +157,8 @@ void triangle(Vec3f *pts, float *zbuffer, TGAImage &image, TGAColor color) {
 ![](images/z_buffer01.png)
 
 
-[代码]
+[代码](https://github.com/KrisYu/tinyrender/tree/master/code/06_simplelightzbuffer)
 
-如果你觉得这里的数学计算稍微有点需要转弯的话，不要着急，我们先休息一下，补一点数学知识再回头来继续。
 
 
 
