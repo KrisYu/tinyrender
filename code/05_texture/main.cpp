@@ -26,7 +26,7 @@ Vec3f barycentric(Vec2i A, Vec2i B, Vec2i C, Vec2i P) {
   return Vec3f(-1,1,1); // in this case generate negative coordinates, it will be thrown away by the rasterizator
 }
 
-void triangle(Vec2i *pts, TGAImage &image, TGAColor color) {
+void triangle(Vec2i *pts, Vec2f *texts, TGAImage &image) {
   Vec2i bboxmin(image.get_width()-1, image.get_height()-1);
   Vec2i bboxmax(0, 0);
   Vec2i clamp(image.get_width()-1, image.get_height()-1);
@@ -40,11 +40,12 @@ void triangle(Vec2i *pts, TGAImage &image, TGAColor color) {
   for (P.x = bboxmin.x; P.x <= bboxmax.x; P.x++) {
     for (P.y = bboxmin.y; P.y <= bboxmax.y; P.y++) {
       Vec3f bc_screen = barycentric(pts[0], pts[1], pts[2], P);
+      Vec2f p_text = texts[0]*bc_screen[0] + texts[1]*bc_screen[1] + texts[2]*bc_screen[2];
       if (bc_screen.x < 0 || bc_screen.y < 0 || bc_screen.z < 0 ) continue;
+      TGAColor color = model->diffuse(p_text);
       image.set(P.x, P.y, color);
     }
   }
-
 }
 
 Vec2i world2screen(Vec3f v){
@@ -59,22 +60,19 @@ int main(int argc, char** argv){
   }
 
   TGAImage image(width, height, TGAImage::RGB);
-  srand(time(NULL));
 
   for (int i = 0; i < model->nfaces(); i++) {
     std::vector<int> face = model->face(i);
     Vec3f world_coords[3];
     Vec2i screen_coords[3];
+    Vec2f texts[3];
     for (int j = 0; j < 3; j++) {
-      world_coords[j] = model->vert(face[j]);
+      world_coords[j] = model->vert(face[j*2]);
       screen_coords[j] = world2screen(world_coords[j]);
+      texts[j] = model->uv(face[j*2+1]);
     }
 
-    int r = std::rand() % 255;
-    int g = std::rand() % 255;
-    int b = std::rand() % 255;
-
-    triangle(screen_coords, image, TGAColor(r,g,b,255));
+    triangle(screen_coords, texts, image);
   }
 
   image.flip_vertically(); // i want to have the origin at the left bottom corner of the image
