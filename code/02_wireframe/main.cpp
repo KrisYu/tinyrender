@@ -5,8 +5,8 @@ using std::cout; using std::endl;
 
 
 Model *model = NULL;
-const int width = 800;
-const int height = 800;
+const int width = 400;
+const int height = 400;
 
 const TGAColor white = TGAColor(255, 255, 255, 255);
 const TGAColor red = TGAColor(255, 0, 0, 255);
