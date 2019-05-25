@@ -79,3 +79,38 @@ void triangle(Vec4f *pts, IShader &shader, TGAImage &image, TGAImage &zbuffer){
 looks good.
 
 [代码]()
+
+之所以我们让fragment返回一个bool告诉我们是否需要保留pixel这个也可以用处待谈，我们也可以修改 fragment shader改变着色方式：
+
+
+```C++
+  virtual bool fragment(Vec3f bar, TGAColor &color){
+    float intensity = varying_intensity * bar; //interpolate intensity for current Pixel
+    if (intensity > .85)  intensity = 1;
+    else if (intensity > .60) intensity = .80;
+    else if (intensity > .45) intensity = .60;
+    else if (intensity > .30) intensity = .45;
+    else if (intensity > .15) intensity = .30;
+    else intensity = 0;
+    color = TGAColor(255,255,255)*intensity;
+    return false; // do not discard pixel
+  }
+```
+
+
+![](images/gouraud_shading2.png)
+
+有点卡通效果。
+
+
+## Phong着色
+
+Gouround 着色看起来不错，但是也存在问题，就是当物体距离‘点光源’很近的时候，这个可以参考[Gourand着色]的缺陷部分。
+
+
+- 平面着色： 每个三角形只计算一个光照
+- Gouraud着色： 每个三角形计算三个光照，同时针对三角形中每个点做线性插值
+- Phong着色： 我们把三角形的法向量和光照针对每个点P都做线性插值
+
+Phong着色会要求更多的计算，当然也会解决Gourand着色的缺陷
+
