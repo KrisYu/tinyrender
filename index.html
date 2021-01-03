@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>index</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">从画点开始</h1>
+
+<h2 id="toc_1">TGAImage</h2>
+
+<p>生成图像我们使用TGAImage，这个使用起来很简单：</p>
+
+<div><pre><code class="language-C++">#include &quot;tgaimage.h&quot;
+
+const TGAColor white = TGAColor(255, 255, 255, 255);
+const TGAColor red   = TGAColor(255, 0,   0,   255);
+
+int main(int argc, char** argv){
+  TGAImage image(100, 100, TGAImage::RGB);
+  image.set(52, 41, red);
+  image.flip_vertically(); // i want to have the origin at the left bottom corner of the image
+  image.write_tga_file(&quot;output.tga&quot;);
+  return 0;
+}</code></pre></div>
+
+<p>生成的图像（注意中间哪一个小小的红色点）：</p>
+
+<p><img src="images/prepare.png" alt=""></p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/00_prepare">代码</a></p>
+
+<p>compile：</p>
+
+<div><pre><code class="language-none">g++ main.cpp tgaimage.cpp -o main</code></pre></div>
+
+<h2 id="toc_2">wavefront obj</h2>
+
+<p>然后我们来学习一种3d格式文件，wavefront obj file:</p>
+
+<div><pre><code class="language-none"># List of geometric vertices, with (x, y, z [,w]) coordinates, w is optional and defaults to 1.0.
+  v 0.123 0.234 0.345 1.0
+  v ...
+  ...
+  # List of texture coordinates, in (u, [v ,w]) coordinates, these will vary between 0 and 1, v and w are optional and default to 0.
+  vt 0.500 1 [0]
+  vt ...
+  ...
+  # List of vertex normals in (x,y,z) form; normals might not be unit vectors.
+  vn 0.707 0.000 0.707
+  vn ...
+  ...
+  # Parameter space vertices in ( u [,v] [,w] ) form; free form geometry statement ( see below )
+  vp 0.310000 3.210000 2.100000
+  vp ...
+  ...
+  # Polygonal face element (see below)
+  f 1 2 3
+  f 3/1 4/2 5/3
+  f 6/4/1 3/5/3 7/6/5
+  f 7//1 8//2 9//3
+  f ...
+  ...
+  # Line element (see below)
+  l 5 8 1 2 4 9</code></pre></div>
+
+<p>我们现在只需要知道了解顶点是v，现在我们想把一个文件中的3d模型的顶点 v (x, y, z) 给画出来，（因为我们已经知道怎么在图上相应的位置放像素）这个文件所有的 x, y, z ∈ [-1, 1]，所以我们</p>
+
+<ul>
+<li>需要把它们映射到合适范围。</li>
+<li>然后注意我们画的点 <code>image.set(52, 41, red);</code>, 这里的 52 和 41 是 int，映射之后需要转成int，因为我们总是画在一个一个像素点上。</li>
+</ul>
+
+<p>写一个简单的parser读入文件建立模型，画之。</p>
+
+<p>核心部分长这样：</p>
+
+<div><pre><code class="language-C++">for (int i = 0; i != model-&gt;nverts(); i++) {
+    Vec3f v = model-&gt;vert(i);
+    Vec2i p = world2screen(v);
+    image.set(p.x, p.y, white);
+}</code></pre></div>
+
+<p><img src="images/points.png" alt=""></p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/01_points">代码</a></p>
+
+<p>compile:</p>
+
+<div><pre><code class="language-none">g++ main.cpp tgaimage.cpp model.cpp -o main</code></pre></div>
+
+<h1 id="toc_3">画线</h1>
+
+<p>画完了点，我们来开始画线。画线的同时我们依旧要记得，我们是画在一个一个整数的pixel上。</p>
+
+<h2 id="toc_4">尝试一： 按照参数绘制直线</h2>
+
+<div><pre><code class="language-C++">void line(int x0, int y0, int x1, int y1, TGAImage &amp;image, TGAColor color) { 
+  for (float t=0.; t&lt;1.; t+=.01) { 
+    int x = x0 + (x1-x0)*t; 
+    int y = y0 + (y1-y0)*t; 
+    image.set(x, y, color); 
+  } 
+}</code></pre></div>
+
+<p>这里的问题有两个：</p>
+
+<ul>
+<li>效率低</li>
+<li>t如何控制</li>
+</ul>
+
+<p>t取大了画出来的并不是线，而是一堆点。t取小了会浪费，有很多重复的x和y。</p>
+
+<h2 id="toc_5">尝试二： 按x的增加画线</h2>
+
+<div><pre><code class="language-C++">void line(int x0, int y0, int x1, int y1, TGAImage &amp;image, TGAColor color) { 
+  for (int x=x0; x&lt;=x1; x++) { 
+    float t = (x-x0)/(float)(x1-x0); 
+    int y = y0 + (y1 - y0)*t; 
+    image.set(x, y, color); 
+  } 
+}</code></pre></div>
+
+<p>我们想着要节约，就每次 x 增加1，然后来画y。</p>
+
+<p>这样画线是对的因为我们假设 \(y = mx + b \), 直线斜率m， 截距b</p>
+
+<p>\[
+\frac{y_1 - y_0}{x_1 - x_0} = m
+\]</p>
+
+<p>\[
+y_0 = mx_0 + b
+\]</p>
+
+<p>\[
+y = y_0 + \frac{y_1 - y_0}{x_1 - x_0}(x - x_0)
+\]</p>
+
+<p>所以</p>
+
+<p>\[
+y = y_0 + mx - mx_0 = mx + (y_0 - mx_0) = mx + b
+\]</p>
+
+<p>同时它的问题是我们也已经指出:</p>
+
+<ul>
+<li>如果直线斜率太大，比如 m = 3, 那么x每增加1个像素，y增加3个像素，这样画出来就是分离的点。</li>
+<li>只能适用于 x0 &lt; x1的状况</li>
+</ul>
+
+<h2 id="toc_6">尝试三</h2>
+
+<p>所以想法是：</p>
+
+<ul>
+<li>如有必要交换 x0 和 x1，这样使得 x0 一定小于 x1</li>
+<li>如果斜率比较大，则交换 x 和 y</li>
+</ul>
+
+<p>看代码：</p>
+
+<div><pre><code class="language-C++">void line(int x0, int y0, int x1, int y1, TGAImage &amp;image, TGAColor color) {
+  bool steep = false;
+  if (std::abs(x0-x1)&lt;std::abs(y0-y1)) { // if the line is steep, we transpose the image
+    std::swap(x0, y0);
+    std::swap(x1, y1);
+    steep = true;
+  }
+  if (x0&gt;x1) { // make it left−to−right
+    std::swap(x0, x1);
+    std::swap(y0, y1);
+  }
+  for (int x=x0; x&lt;=x1; x++) {
+    float t = (x-x0)/(float)(x1-x0);
+    int y = y0 + (y1 - y0)*t;
+    if (steep) {
+        image.set(y, x, color); // if transposed, de−transpose
+    } else {
+        image.set(x, y, color);
+    }
+  } 
+}</code></pre></div>
+
+<p>这样就可以完善上述出现的问题来画线了。</p>
+
+<p>这里其实还是有一些可以进步的空间，比如出现了浮点数t，同时也依旧我们之前说的我们只需要画在整数上。可以参见： </p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/64989645">再谈绘制直线</a>中的优化部分。</p>
+
+<p>不过我们画线就暂时停在这里。我们就用这个函数来画了，因为compiler的优化已经足够好了。</p>
+
+<h2 id="toc_7">wavefront obj</h2>
+
+<p>之前我们已经用过这个文件，上次我们认识了v 代表顶点（vertex),这次我们来多认识一个f 代表面（face)，实际上是三角形面，在这个文件中我们的一行f有：</p>
+
+<div><pre><code class="language-none">f 1193/1240/1193 1180/1227/1180 1179/1226/1179</code></pre></div>
+
+<p>我们现在只需要知道每组的第一个数字： 1193,1180,1179 是代表vertex list中的三个顶点的索引（index），这三个顶点构成一个三角形。</p>
+
+<p>所以进一步修改model parser，我们来用这个画出线框，核心代码长这样：</p>
+
+<div><pre><code class="language-C++">for (int i = 0; i &lt; model-&gt;nfaces(); i++) {
+  std::vector&lt;int&gt; face = model-&gt;face(i);
+    // face: i0,i1,i2 of triangle
+    for (int j = 0; j &lt; 3; j++) {
+    Vec3f v0 = model-&gt;vert(face[j]);
+    // this % used for when j = 2 to get i2, i0
+    Vec3f v1 = model-&gt;vert(face[(j+1)%3]);
+    int x0 = (v0.x+1.)*width/2.;
+    int y0 = (v0.y+1.)*height/2.;
+    int x1 = (v1.x+1.)*width/2.;
+    int y1 = (v1.y+1.)*height/2.;
+    line(x0, y0, x1, y1, image, white);
+  }
+}</code></pre></div>
+
+<p><img src="images/wireframe.png" alt=""></p>
+
+<p>looks good.</p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/02_wireframe">代码</a></p>
+
+<p>compile</p>
+
+<div><pre><code class="language-none">g++ -std=c++11 main.cpp tgaimage.cpp model.cpp -o main</code></pre></div>
+
+<h1 id="toc_8">填充三角形</h1>
+
+<h2 id="toc_9">线性插值</h2>
+
+<p>来复习一下画线,我们知道画线的时候我们做的实际上是这样的事情：对于要画的线AB，在满足我们设定的条件（斜率 ≤ 1, A &lt; B）之后，因为我们要画的是整数的像素点，对于x每增加1，我们算出对应的y，然后来画点（x，y），这样重复直到x增加到B点：</p>
+
+<p><img src="images/Bresenham.png" alt=""></p>
+
+<p>对于 AB 上的任意一点 P 满足：</p>
+
+<p>\[
+P = A + t(B - A), 0 \le t \le 1
+\]</p>
+
+<p>也可以写成：</p>
+
+<p>\[
+P = (1 - t)A + tB , 0 \le t \le 1
+\]</p>
+
+<p>这个公式是著名的线性插值，实际上也是我们画线的基础。因为在画线部分核心代码长这样：</p>
+
+<div><pre><code class="language-C++">for (int x=x0; x&lt;=x1; x++) {
+  float t = (x-x0)/(float)(x1-x0);
+  int y = y0 + (y1 - y0)*t;
+  ...
+}</code></pre></div>
+
+<p>对于P点，我们根据增加后的x算出t值，然后算出y，得到应该画的点。</p>
+
+<p>其实在画框架的时候我们已经画过三角形了，就画三条线就OK。现在我们要做的是来填充三角形。</p>
+
+<h2 id="toc_10">扫描法</h2>
+
+<p>若要填充一个三角形，最简单的能想到的办法是对于三角形的每一个y，我们找到对应的左侧和右侧，x_left和x_right，我们画上x_left到x_right的线，那么从三角形最上面的点按y增加扫到最下面的点既可。</p>
+
+<p>为了简单起见，我们先把三角形拆成上下两部分：</p>
+
+<p><img src="images/upper_down_triangle.png" alt=""></p>
+
+<p>那么对于一个特定的y，我们想要找到它的左边和右边 A B 两点，思路是这样：</p>
+
+<ul>
+<li>首先排序，保证 t0 ≤ t1 ≤ t2</li>
+<li>整个三角形的高度必为 t2.y - t0.y</li>
+<li>那么对于上半部分，y每增加1（注意有可能t0 == t1),我们用插值法算出对应的两点A和B</li>
+</ul>
+
+<p>这样就能算出对应的 A 和 B</p>
+
+<div><pre><code class="language-C++">void triangle(Vec2i t0, Vec2i t1, Vec2i t2, TGAImage &amp;image, TGAColor color) { 
+    // sort the vertices, t0, t1, t2 lower−to−upper (bubblesort yay!) 
+    if (t0.y&gt;t1.y) std::swap(t0, t1); 
+    if (t0.y&gt;t2.y) std::swap(t0, t2); 
+    if (t1.y&gt;t2.y) std::swap(t1, t2); 
+    int total_height = t2.y-t0.y; 
+    for (int y=t0.y; y&lt;=t1.y; y++) { 
+        int segment_height = t1.y-t0.y+1; 
+        float alpha = (float)(y-t0.y)/total_height; 
+        float beta  = (float)(y-t0.y)/segment_height; // be careful with divisions by zero 
+        Vec2i A = t0 + (t2-t0)*alpha; 
+        Vec2i B = t0 + (t1-t0)*beta; 
+        image.set(A.x, y, red); 
+        image.set(B.x, y, green); 
+    } 
+}</code></pre></div>
+
+<p><img src="images/triangle_left_right.png" alt=""></p>
+
+<p>那么有了 A 和 B 之后，我们在AB之间调用我们的画线函数，再用同样的方法给下半部分填满，问题既解决。</p>
+
+<div><pre><code class="language-C++">void triangle(Vec2i t0, Vec2i t1, Vec2i t2, TGAImage &amp;image, TGAColor color) { 
+    // sort the vertices, t0, t1, t2 lower−to−upper (bubblesort yay!) 
+    if (t0.y&gt;t1.y) std::swap(t0, t1); 
+    if (t0.y&gt;t2.y) std::swap(t0, t2); 
+    if (t1.y&gt;t2.y) std::swap(t1, t2); 
+    int total_height = t2.y-t0.y; 
+    for (int y=t0.y; y&lt;=t1.y; y++) { 
+        int segment_height = t1.y-t0.y+1; 
+        float alpha = (float)(y-t0.y)/total_height; 
+        float beta  = (float)(y-t0.y)/segment_height; // be careful with divisions by zero 
+        Vec2i A = t0 + (t2-t0)*alpha; 
+        Vec2i B = t0 + (t1-t0)*beta; 
+        if (A.x&gt;B.x) std::swap(A, B); 
+        for (int j=A.x; j&lt;=B.x; j++) { 
+            image.set(j, y, color); // attention, due to int casts t0.y+i != A.y 
+        } 
+    } 
+    for (int y=t1.y; y&lt;=t2.y; y++) { 
+        int segment_height =  t2.y-t1.y+1; 
+        float alpha = (float)(y-t0.y)/total_height; 
+        float beta  = (float)(y-t1.y)/segment_height; // be careful with divisions by zero 
+        Vec2i A = t0 + (t2-t0)*alpha; 
+        Vec2i B = t1 + (t2-t1)*beta; 
+        if (A.x&gt;B.x) std::swap(A, B); 
+        for (int j=A.x; j&lt;=B.x; j++) { 
+            image.set(j, y, color); // attention, due to int casts t0.y+i != A.y 
+        } 
+    } 
+}</code></pre></div>
+
+<p>这样三角形填充就解决。代码里有很多重复的部分，然后这里决定让代码短一点，代价是读起来没那么清楚了：</p>
+
+<div><pre><code class="language-C++">void triangle(Vec2i t0, Vec2i t1, Vec2i t2, TGAImage &amp;image, TGAColor color) { 
+    if (t0.y==t1.y &amp;&amp; t0.y==t2.y) return; // I dont care about degenerate triangles 
+    // sort the vertices, t0, t1, t2 lower−to−upper (bubblesort yay!) 
+    if (t0.y&gt;t1.y) std::swap(t0, t1); 
+    if (t0.y&gt;t2.y) std::swap(t0, t2); 
+    if (t1.y&gt;t2.y) std::swap(t1, t2); 
+    int total_height = t2.y-t0.y; 
+    for (int i=0; i&lt;total_height; i++) { 
+        bool second_half = i&gt;t1.y-t0.y || t1.y==t0.y; 
+        int segment_height = second_half ? t2.y-t1.y : t1.y-t0.y; 
+        float alpha = (float)i/total_height; 
+        float beta  = (float)(i-(second_half ? t1.y-t0.y : 0))/segment_height; // be careful: with above conditions no division by zero here 
+        Vec2i A =               t0 + (t2-t0)*alpha; 
+        Vec2i B = second_half ? t1 + (t2-t1)*beta : t0 + (t1-t0)*beta; 
+        if (A.x&gt;B.x) std::swap(A, B); 
+        for (int j=A.x; j&lt;=B.x; j++) { 
+            image.set(j, t0.y+i, color); // attention, due to int casts t0.y+i != A.y 
+        } 
+    } 
+}</code></pre></div>
+
+<h2 id="toc_11">wavefront obj</h2>
+
+<p>上一章我们画了框架，这下我们来填上三角形：</p>
+
+<p><img src="images/filledframe.png" alt=""></p>
+
+<p>好吧，并不是很动人=。=之所以不动人是因为光影光影，我们只有颜色，没有考虑光，</p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/03_filledtriangle">代码</a></p>
+
+<p>compile:</p>
+
+<div><pre><code class="language-none">g++ -std=c++11 main.cpp tgaimage.cpp model.cpp -o main</code></pre></div>
+
+<h2 id="toc_12">重心坐标法</h2>
+
+<p>除了上面提到的扫描法之外，另外一个可以想到的办法是，因为我们终究是画到二维平面上的像素，一个一个的点，那么对于我们要画的区域内的每一个点，我们是否可以检测看它是否在三角形之内，如果是的话，画它，否则不理之。这样的思路是可行的，对于三角形内及其边上的任意一点，我们都可以用重心坐标系来表示：</p>
+
+<p>\[
+P = (1 - u - v)A + uB + vC, 0 \le u,v \le 1
+\]</p>
+
+<p>这个长得也很像线性插值。</p>
+
+<p>运算:</p>
+
+<p>\[
+P = A + u\overrightarrow{AB}  + v\overrightarrow{AC} 
+\]</p>
+
+<p>继续：</p>
+
+<p>\[
+u\overrightarrow{AB}  + v\overrightarrow{AC} + \overrightarrow{PA} = 0
+\]</p>
+
+<p>PA是AB和AC的线性组合。</p>
+
+<p>拆一拆：</p>
+
+<p>\[
+u\overrightarrow{AB}_x  + v\overrightarrow{AC}_x + \overrightarrow{PA}_x = 0
+\]</p>
+
+<p>\[
+u\overrightarrow{AB}_y  + v\overrightarrow{AC}_y + \overrightarrow{PA}_y = 0
+\]</p>
+
+<p>实际上我们都可以看做是我们在寻找向量 \((u, v, 1)\) 同时垂直于向量 \((\overrightarrow{AB}_x, \overrightarrow{AC}_x,\overrightarrow{PA}_x)\) 和向量 \((\overrightarrow{AB}_y, \overrightarrow{AC}_y,\overrightarrow{PA}_y)\)。 这就是叉乘。</p>
+
+<div><pre><code class="language-none">xvector = (B_x - A_x, C_x - A_x, A_x - P_x)
+yvector = (B_y - A_y, C_y - A_y, A_y - P_y)
+u = xvector x yvector
+
+# 如果 u 的 z 分量不等于1则说明P点不在三角形内</code></pre></div>
+
+<p>因为我们的计算有浮点数，可能u的z分量不会一定等于1,令 u 的三个分量是 (a, b, c),我们代入原式子：</p>
+
+<p>\[
+a\overrightarrow{AB}  + b\overrightarrow{AC} + c\overrightarrow{PA} = 0
+\]</p>
+
+<p>\[
+P = (1 - a/c - b/c)A +  a/cB + b/cC, c \ne 0
+\]</p>
+
+<p>代码我们这样写：</p>
+
+<div><pre><code class="language-C++">Vec3f barycentric(Vec2f A, Vec2f B, Vec2f C, Vec2f P) {
+    Vec3f s[2];
+    for (int i=2; i--; ) {
+        s[i][0] = C[i]-A[i];
+        s[i][1] = B[i]-A[i];
+        s[i][2] = A[i]-P[i];
+    }
+    Vec3f u = cross(s[0], s[1]);
+    if (std::abs(u[2])&gt;1e-2) // dont forget that u[2] is integer. If it is zero then triangle ABC is degenerate
+        return Vec3f(1.f-(u.x+u.y)/u.z, u.y/u.z, u.x/u.z);
+    return Vec3f(-1,1,1); // in this case generate negative coordinates, it will be thrown away by the rasterizator
+}</code></pre></div>
+
+<p>我们当然也不用把平面区域的每个点代入P去做检查，我们只需要找到三角形的 bounding_box,然后看其中的每一个整数点，如果在其中，那就画之。</p>
+
+<p>用同样的方法来给模型填色，效果一样。</p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/04_barycentricfilled">代码</a></p>
+
+<p>效果跟之前依旧一致，我们给每个三角形随机填上色：</p>
+
+<p><img src="images/filledrandom.png" alt=""></p>
+
+<p>随机填色这个我们看起来倒是有点cool.</p>
+
+<h1 id="toc_13">z-buffer</h1>
+
+<h2 id="toc_14">简单光</h2>
+
+<p>我们现在先复习一下，我们经过了画点、画线，填三角形之后已经能画出来一些东西了，现在我们有好几条路可以走，那就是 </p>
+
+<ul>
+<li>光（上帝说“要有光”）</li>
+<li>纹理（不然就填白色和随机颜色么？）</li>
+<li>数学（之前做的所有事情就是简单的把x,y对应的画到图像上来）</li>
+</ul>
+
+<p>这里我们做的事就是简单的给我们的模型一点‘方向光’，注意我这里说了一专有名词‘方向光’，所以还会有别光（暂且不表）。方向光就是类似太阳光一样的，我们只考虑它的方向：</p>
+
+<p><img src="images/directional_light.png" alt=""></p>
+
+<p>对于一束光，我们到达物体表面的能量实际上是：</p>
+
+<p><img src="images/cos_alpha.png" alt=""></p>
+
+<p>它的强度 Icosα， α是物体光与物体的法向量的夹角。</p>
+
+<p>如果我们用\(\overrightarrow{L}\)表示光的方向，\(\overrightarrow{N}\)指向物体光照处&#39;向内的&#39;法向量，那么</p>
+
+<p>\[
+cos\alpha =  \frac{\overrightarrow{L} \cdot \overrightarrow{N}}{|\overrightarrow{L}| \cdot |\overrightarrow{N}|} ​
+\]</p>
+
+<p>这里我们就必须要考虑一些数学问题了，物体我们放在这，然后有光的方向:</p>
+
+<p><img src="images/light_scene01.png" alt=""></p>
+
+<p>那么&#39;朝内的&#39;法向量可以这样得到\(\overrightarrow{AC} \times \overrightarrow{AB}\)，然后正交化： </p>
+
+<p><img src="images/light_scene02.png" alt=""></p>
+
+<p>这里我们先做很多简化操作：</p>
+
+<ul>
+<li>光的方向是 Vec3f light(0, 0, -1), 强度就是1</li>
+<li>假设每个三角形收到光照的强度相同，都是 Icosα</li>
+<li>三角形法向量\(\overrightarrow{AC} \times \overrightarrow{AB}\)</li>
+<li>当然我们还要知道 cosα 大于0才有意义，我们不可能减去光o(╯□╰)o</li>
+</ul>
+
+<p>核心代码：</p>
+
+<div><pre><code class="language-C++">Vec3f norm = cross(world_coords[2] - world_coords[0], world_coords[1] - world_coords[0]);
+norm.normalize();
+float intensity = light*norm;
+if (intensity &gt; 0) {
+  triangle(screen_coords, image, TGAColor(intensity*255,intensity*255,intensity*255,255));
+}</code></pre></div>
+
+<p>看效果：</p>
+
+<p><img src="images/simple_light.png" alt=""></p>
+
+<p>妈妈他是凸嘴。我们换一个光的方向。</p>
+
+<p><img src="images/simple_light2.png" alt=""></p>
+
+<p>更吓人了。。。。他嘴巴怎么长后面了。。</p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/05_simplelight">代码</a></p>
+
+<p>compile &amp; run：</p>
+
+<div><pre><code class="language-none">$ g++ -std=c++11 main.cpp tgaimage.cpp model.cpp -o main
+$ ./main</code></pre></div>
+
+<h2 id="toc_15">z-buffer</h2>
+
+<p>造成这个问题的原因很简单，我们就是一股脑的把三角形画出来了，没有考虑三角形的先后顺序，正如画画一样，我们应该先画远处的东西，如果近处有什么东西把它给覆盖了，我们就不会看到远处的东西，这里我们就是画三角形的时候没有考虑先后顺序。那么这个问题要怎么解决呢？</p>
+
+<p>这里我们先继续回顾一下三角形重心坐标：</p>
+
+<p>\[
+P = (1 - a/c - b/c)A +  a/cB + b/cC, c \ne 0
+\]</p>
+
+<p>这里其实有一个很cool的点，就是我们把P表示成三角形三个顶点的线性组合，再回忆一下线性插值，其实对于P点的任何性质，我们都可以利用类似线性插值，把它变成三个顶点的组合：</p>
+
+<p>\[
+P_z = (1 - a/c - b/c)A_z +  a/cB_z + b/cC_z, c \ne 0
+\]</p>
+
+<p>所以这里就给了我们提示，对于任意一点P，我们算出它的z值，如果z值更靠近我们，那么我们就用它来替换已经画上的点，否则我们则不更新P点。</p>
+
+<p>同样我们也只用考虑画布上的所有的点的P值，可以用一个二维的数组来表示，不过我们这里偷懒，就用一维的数组，因为画布上的(x,y)点可以写成(x + y *width)，可以这样来转换:</p>
+
+<div><pre><code class="language-C++">int idx = x + y*width;</code></pre></div>
+
+<div><pre><code class="language-C++">int x = idx % width;
+int y = idx / width;</code></pre></div>
+
+<p>同时注意我们在把物体坐标系做映射时，需要保留z值，所以一些计算我们最好就用float.同时我们也需要注意在转换坐标系的时候我们需要注意还是需要把 x 和 y 变成int，否则有些地方会因为浮点数的原因for loop不会覆盖所有的像素，会有黑色部分产生：</p>
+
+<div><pre><code class="language-C++">Vec3f world2screen(Vec3f v) {
+  // 注意这里我们还是保留了int这个操作，因为我们的画像素的for loop要用到这个x和y
+  // 如果都是浮点数，那么for loop有些可能无法顺利进行
+  // 我们再加上0.5来四舍五入
+  return Vec3f(int((v.x+1.)*width/2.+.5), int((v.y+1.)*height/2.+.5), v.z);
+}</code></pre></div>
+
+<p>第二个需要注意的点是我们物体的位置和朝向，这里我们把z-buffer初始化为负无穷大，然后如果P.z更大意味更靠近我们。</p>
+
+<div><pre><code class="language-none">void triangle(Vec3f *pts, float *zbuffer, TGAImage &amp;image, TGAColor color) {
+  Vec2f bboxmin(std::numeric_limits&lt;float&gt;::max(),std::numeric_limits&lt;float&gt;::max());
+  Vec2f bboxmax(std::numeric_limits&lt;float&gt;::min(),std::numeric_limits&lt;float&gt;::min());
+  Vec2f clamp(image.get_width()-1, image.get_height()-1);
+  for (int i = 0; i &lt; 3; i++) {
+    for (int j = 0; j &lt; 2; j++) {
+      bboxmin[j] = std::max(0.f,      std::min(bboxmin[j], pts[i][j]));
+      bboxmax[j] = std::min(clamp[j], std::max(bboxmax[j], pts[i][j]));
+    }
+  }
+  Vec3f P;
+  for (P.x = bboxmin.x; P.x &lt;= bboxmax.x; P.x++) {
+    for (P.y = bboxmin.y; P.y &lt;= bboxmax.y; P.y++) {
+      Vec3f bc_screen = barycentric(pts[0], pts[1], pts[2], P);
+      if (bc_screen.x &lt; 0 || bc_screen.y &lt; 0 || bc_screen.z &lt; 0 ) continue;
+      P.z = 0;
+      for (int i=0; i&lt;3; i++) P.z += pts[i][2]*bc_screen[i];
+      if (zbuffer[int(P.x+P.y*width)] &lt; P.z) {
+        image.set(P.x, P.y, color);
+        zbuffer[int(P.x+P.y*width)] = P.z;
+      }
+    }
+  }
+}</code></pre></div>
+
+<p>看结果:</p>
+
+<p><img src="images/z_buffer01.png" alt=""></p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/06_simplelightzbuffer">代码</a></p>
+
+<h1 id="toc_16">纹理</h1>
+
+<p>之前我们说有三个方向可以走 - 光、纹理、数学，我们先轻松一下，看一下纹理。</p>
+
+<p>纹理其实就是贴图，比如看这个正方体，如果我们想要它有木质效果。对于它的每一面，我们给它贴上图就ok.</p>
+
+<p><img src="images/r17-texture-mapping.png" alt=""></p>
+
+<p>注意只用图的一部分也是完全ok的。</p>
+
+<p>我们定义 u 和 v</p>
+
+<p>\[
+ 0 \le u \le 1
+\]</p>
+
+<p>\[
+ 0 \le v \le 1
+\]</p>
+
+<p>(u, v)  会对应到图片(宽w, 高h)上的 (u(w - 1), v(h - 1))，这样定义的的好处当然很多啦， 比如我们可以随意换纹理图，还可以随意换纹理图大小...等等等。</p>
+
+<p><img src="images/uvwh.png" alt=""></p>
+
+<p>针对每个三角形的顶点我们有 (u, v)， 同样用重心坐标系算出对于三角形的每一点的 (u, v)，然后根据这个 (u, v) 来画图。</p>
+
+<p><img src="images/texture_uv.png" alt=""></p>
+
+<h2 id="toc_17">wavefront obj</h2>
+
+<p>对于我们的文件，其中有:</p>
+
+<div><pre><code class="language-none">vt  0.532 0.923 0.000</code></pre></div>
+
+<p>这个数据就是我们三角形对应的(u, v)。</p>
+
+<p>而我们之前读f的时候，丢弃了一些数据，实际上：</p>
+
+<div><pre><code class="language-none">f 1193/1240/1193 1180/1227/1180 1179/1226/1179</code></pre></div>
+
+<p>实际上三个数据分别是： 顶点索引/顶点法向量索引/顶点纹理索引。</p>
+
+<p>我们来修改model， 给出纹理文件：&#39;african_head_diffuse.tga&#39;，读入纹理，然后贴上图看看，注意这里我们并没有给他加上光：</p>
+
+<p><img src="images/texture.png" alt=""></p>
+
+<p>looks good!</p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/07_texture">代码</a></p>
+
+<p>compile &amp; run：</p>
+
+<div><pre><code class="language-none">$ g++ -std=c++11 main.cpp tgaimage.cpp model.cpp -o main
+$ ./main</code></pre></div>
+
+<h1 id="toc_18">数学知识</h1>
+
+<p>之前我们说有三个方向可以走 - 光、纹理、数学。然后我们简单看了一个光的例子来学习z-buffer和纹理，现在我们来看一下相关的数学知识。这些也很重要。</p>
+
+<p>需要了解的概念包括：</p>
+
+<ul>
+<li>矩阵是如何变换向量的: V&#39; = Matrix * V</li>
+<li>窗口变换、坐标变换: 同样可以用矩阵表示</li>
+<li>正交投影、透视投影：矩阵表示</li>
+<li>左手坐标系vs右手坐标系</li>
+<li>...</li>
+</ul>
+
+<p>这部分可以参考我的一些文章</p>
+
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/63610995">[从零开始计算机图形学]之十四数学知识</a> 中的齐次坐标、变换矩阵部分</li>
+<li><a href="https://zhuanlan.zhihu.com/p/66240124">矩阵的逆、坐标变换和窗口变换</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/66384929">LookAt、Viewport、Perspective矩阵</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/64707259">左手坐标系vs右手坐标系</a></li>
+</ul>
+
+<p>经过这些补充之后，我们需要知道的是为了变换物体位置，并且符合近大远小的原则我们最终画在屏幕上的点需要经过这些变换：</p>
+
+<div><pre><code class="language-none">顶点 → 世界坐标系 → 摄像头坐标系 → 投影 → 屏幕坐标系
+
+viewport * projection * view * model * vertex.</code></pre></div>
+
+<h2 id="toc_19">加上数学</h2>
+
+<p>这里我们简单用一点点数学，我们不动物体，但是把眼睛/摄像头放到 z = 3 的位置，头像缩小一点点，再加上透视投影。</p>
+
+<p><img src="images/math_loc.png" alt=""></p>
+
+<p>结果：</p>
+
+<p><img src="images/math01.png" alt=""></p>
+
+<p>看起来不错，近大远小我们能看出来。</p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/08_math_involved">代码</a> 在geometry.h 中有较大的修改，引入了矩阵类及其运算。</p>
+
+<p>说起数学我们还不能逃开一些问题，比如：</p>
+
+<ul>
+<li>我们在代码中没有考虑当我们变换物体的时候，它的法向量会怎样变化？是否可以用同样的矩阵来变换？→ <a href="https://zhuanlan.zhihu.com/p/66669463">法向量变换</a></li>
+<li>我们把物体映射到一个范围，但是不是物体的所有部分都在我们能看到的区域，所以这里还需要一个裁剪步骤</li>
+<li>有些三角形可以提前丢弃（比如处于视线背面的），我们可以尽早的丢掉它们，这样可以节省计算 → 参考<a href="">隐藏面消除</a> 中的背面消除部分</li>
+<li>需要比较清楚什么时候选什么坐标系中的顶点，比如光：它应该是跟哪个坐标系或者变换在什么状态下的顶点互动？</li>
+</ul>
+
+<h1 id="toc_20">平面着色</h1>
+
+<h2 id="toc_21">更多的数学</h2>
+
+<p>在上一次计算的代码中，我们把模型的坐标\(v_x,v_y\)映射投影到了一定的区间，其实对于\(v_z\)我们也可以这样来做。这样可以更多更好的运用我们的齐次坐标，为了方便，我们可以把\(v_z\)映射到[0,255]之间，这样当然我们的 viewport 矩阵要跟着改了, d = 255:</p>
+
+<p>\[
+\begin{pmatrix}
+ w/2 &amp; 0 &amp; 0 &amp; x + w/2\\
+ 0 &amp; h/2 &amp; 0 &amp; y + h/2 \\
+ 0 &amp; 0 &amp; d/2 &amp; d/2 \\
+ 0 &amp; 0 &amp; 0 &amp; 1
+\end{pmatrix}
+\]</p>
+
+<p>我们把\(v_z\)映射到0~255之间还有一个附加原因（好处）是因为TGAImage支持灰度图像，我们可以利用\(v_z\)生成一副灰度图像，这样更利于我们debug，同时我们也不需要再使用zbuffer数组了。</p>
+
+<p>看 code 关键部分：</p>
+
+<div><pre><code class="language-C++">    float z = pts[0][2]*c.x + pts[1][2]*c.y + pts[2][2]*c.z;
+    float w = pts[0][3]*c.x + pts[1][3]*c.y + pts[2][3]*c.z;
+    int frag_depth = std::max(0, std::min(255, int(z/w+.5)));
+    if (c.x &lt; 0 || c.y &lt; 0 || c.z &lt; 0 || zbuffer.get(P.x, P.y)[0] &gt; frag_depth ) continue;
+    image.set(P.x, P.y, color);
+    zbuffer.set(P.x, P.y, TGAColor(frag_depth));</code></pre></div>
+
+<p>我们的zbuffer是一幅TGA图像，方便我们直接从中取值，同时z的计算我们变得更加方便了一些，我们也新增了一些几何计算的部分，比如 Vec3f - Vec3i 互相转换， Vec2f - Vec2i 互相转换。</p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/09_more_math">代码</a></p>
+
+<p>现在compile就需要：</p>
+
+<div><pre><code class="language-none">$ g++ -std=c++11 main.cpp tgaimage.cpp model.cpp geometry.cpp -o main
+$ .\main</code></pre></div>
+
+<p>生成的output跟之前一样，附加生成了一幅zbuffer的图像：</p>
+
+<p><img src="images/zbufferhead.png" alt=""></p>
+
+<h2 id="toc_22">着色</h2>
+
+<p>之前写过为了生成这个output，我们加了一束方向光，并做了一些假设：假设每个三角形收到光照的强度相同，都是 Icosα，法向量是我们根据三角形的边叉乘算出来的。</p>
+
+<p>这种给物体上色的方式就叫做平面着色（Flat Shading)，三角形这个平面着一样的色。除了平面着色以外，我们还有别的着色方式： 高洛德着色(Gouraud shading) 和冯氏着色 (Phong shading).</p>
+
+<h3 id="toc_23">Gouraud shading</h3>
+
+<p>高洛德着色(Gouraud shading) 跟我们处理三角形的z值差不多，算出每个顶点的颜色，然后根据重心坐标，算出三角形内每个P点的颜色，给P点上色。</p>
+
+<p>至于每个顶点的颜色怎么算，别忘了我们的 wavefront file
+<code>
+f 1193/1240/1193 1180/1227/1180 1179/1226/1179
+</code></p>
+
+<p>顶点索引/顶点法向量索引/顶点纹理索引</p>
+
+<p>顶点法向量在文件中是 vn开头的数字：</p>
+
+<div><pre><code class="language-none">vn  0.001 0.482 -0.876</code></pre></div>
+
+<p>有了顶点法向量我们当然就可以算顶点颜色，进一步修改model文件读入更多的数据。</p>
+
+<h2 id="toc_24">Shader</h2>
+
+<p>不同的着色方式会有不同的代码，如果我们每次都要回去修改都太麻烦了，这里我们来整理一次代码，让它靠近OpenGL，把顶点变换和着色抽象出来，变成专门的shader部分，也就是所谓的 vertex shader(顶点着色器） 和 fragment shader（片段着色器）。</p>
+
+<p>我们定义一个IShader基类，所有的找色方式都继承和实现里面的 virtual method.</p>
+
+<div><pre><code class="language-none">struct IShader {
+  virtual ~IShader();
+  virtual Vec4f vertex(int iface, int nthvert) = 0;
+  virtual bool fragment(Vec3f bar, TGAColor &amp;color) = 0;
+};</code></pre></div>
+
+<p>顶点着色器主要做两件事：</p>
+
+<ul>
+<li>变换顶点</li>
+<li>准备数据给片段着色器用</li>
+</ul>
+
+<p>片段着色器也主要做两件事：</p>
+
+<ul>
+<li>决定当前像素的颜色</li>
+<li>是否要丢弃当前像素</li>
+</ul>
+
+<p>平面着色器：</p>
+
+<div><pre><code class="language-C++">struct FlatShader: public IShader{
+  mat&lt;3,3,float&gt; varying_tri; // 用来记录transform之后的三角形
+
+  virtual Vec4f vertex(int iface, int nthvert){
+    Vec4f gl_Vertex = embed&lt;4&gt;(model-&gt;vert(iface, nthvert));
+    gl_Vertex = Projection*ModelView*gl_Vertex;
+    varying_tri.set_col(nthvert, proj&lt;3&gt;(gl_Vertex/gl_Vertex[3])); //记录transform后的三角形，这个在我们片段着色器决定三角形的颜色的时候使用来使用
+    gl_Vertex = ViewPort*gl_Vertex;
+    return gl_Vertex;
+  }
+
+  virtual bool fragment(Vec3f bar, TGAColor &amp;color){
+    Vec3f n = cross(varying_tri.col(1)- varying_tri.col(0),varying_tri.col(2)-
+    varying_tri.col(0)).normalize(); // 计算法向量
+    float intensity = CLAMP(n*light_dir); // 光强度clamp到0，1之间
+    color = TGAColor(255,255,255)*intensity; // 计算颜色
+    return false; 
+  }
+};</code></pre></div>
+
+<p>之所以我们叫这个为 varying_tri 是因为 <strong>varying</strong>是GLSL中的保留字，我们之后会再聊到它，改变一下光的方向、眼睛位置，看最终效果：</p>
+
+<p><img src="images/flat_shading.png" alt=""></p>
+
+<p>代码:</p>
+
+<p>run:</p>
+
+<div><pre><code class="language-none">$ g++ -std=c++11 main.cpp tgaimage.cpp model.cpp geometry.cpp our_gl.cpp -o main
+$ ./main</code></pre></div>
+
+<p>鉴于我们的compile越来越复杂，之后我们会开始使用makefile.</p>
+
+<h1 id="toc_25">Gouraud 着色</h1>
+
+<p>我们前面已经写过如何Gouraud shading，算出三角形每个顶点的光照，然后根据重心坐标插值上色。</p>
+
+<p>那么我们首先再复习一下我们的代码，非常美妙，抽象了很多部分出来，现在如果我们需要更改着色方式，我们只需要更改 main.cpp 中的 shader部分。所以我们来更改代码，变成Gouraud着色：</p>
+
+<div><pre><code class="language-C++">struct GouraudShader: public IShader{
+  Vec3f varying_intensity; // write by vertex shader, read by fragment shader
+
+  virtual Vec4f vertex(int iface, int nthvert){
+    Vec4f gl_Vertex = embed&lt;4&gt;(model-&gt;vert(iface, nthvert)); // read the vertex from obj file
+    gl_Vertex = ViewPort*Projection*ModelView*gl_Vertex;
+    varying_intensity[nthvert] = CLAMP(model-&gt;normal(iface, nthvert)*light_dir); // diffuse light intensity
+    return gl_Vertex;
+  }
+
+  virtual bool fragment(Vec3f bar, TGAColor &amp;color){
+    float intensity = varying_intensity * bar; //interpolate intensity for current Pixel
+    color = TGAColor(255,255,255)*intensity;
+    return false; // do not discard pixel
+  }
+};</code></pre></div>
+
+<p>看一下这个跟triangle函数完美的配合：</p>
+
+<div><pre><code class="language-C++">void triangle(Vec4f *pts, IShader &amp;shader, TGAImage &amp;image, TGAImage &amp;zbuffer){
+  Vec2f bboxmin( std::numeric_limits&lt;float&gt;::max(), std::numeric_limits&lt;float&gt;::max());
+  Vec2f bboxmax(-std::numeric_limits&lt;float&gt;::max(),-std::numeric_limits&lt;float&gt;::max());
+  for (int i = 0; i &lt; 3; i++) {
+    for (int j = 0; j &lt; 2; j++) {
+      // x/w y/w
+      bboxmin[j] = std::min(bboxmin[j], pts[i][j]/pts[i][3]);
+      bboxmax[j] = std::max(bboxmax[j], pts[i][j]/pts[i][3]);
+    }
+  }
+
+  Vec2i P;
+  TGAColor color;
+  for (P.x = bboxmin.x; P.x &lt;= bboxmax.x; P.x++) {
+    for (P.y = bboxmin.y; P.y &lt;= bboxmax.y; P.y++) {
+      Vec3f c = barycentric(proj&lt;2&gt;(pts[0]/pts[0][3]), proj&lt;2&gt;(pts[1]/pts[1][3]),
+       proj&lt;2&gt;(pts[2]/pts[2][3]), P);
+      float z = pts[0][2]*c.x + pts[1][2]*c.y + pts[2][2]*c.z;
+      float w = pts[0][3]*c.x + pts[1][3]*c.y + pts[2][3]*c.z;
+      int frag_depth = std::max(0, std::min(255, int(z/w+.5)));
+      if (c.x &lt; 0 || c.y &lt; 0 || c.z &lt; 0 || zbuffer.get(P.x, P.y)[0] &gt; frag_depth ) continue;
+      bool discard = shader.fragment(c, color);
+      if (!discard) {
+        zbuffer.set(P.x, P.y, TGAColor(frag_depth));
+        image.set(P.x, P.y, color);
+      }
+    }
+  }
+}</code></pre></div>
+
+<p>我们把重心坐标系传入 fragment，这个坐标系会根据三个顶点的光照来计算出这个点的光照，给出对应像素的颜色。</p>
+
+<p>当然也少不了我们的main函数：</p>
+
+<div><pre><code class="language-C++">  GouraudShader shader;
+  for (int i = 0; i &lt; model-&gt;nfaces(); i++) {
+    std::vector&lt;int&gt; face = model-&gt;face(i);
+    Vec4f screen_coords[3];
+    for (int j = 0; j &lt; 3; j++) {
+      screen_coords[j] = shader.vertex(i, j); //处理每个三角形
+    }
+    triangle(screen_coords, shader, image, zbuffer);
+  }</code></pre></div>
+
+<p><img src="images/gouraud_shading.png" alt=""></p>
+
+<p>looks good.</p>
+
+<p><a href="">代码</a></p>
+
+<p>之所以我们让fragment返回一个bool告诉我们是否需要保留pixel这个也可以用处待谈，我们也可以修改 fragment shader改变着色方式：</p>
+
+<div><pre><code class="language-C++">  virtual bool fragment(Vec3f bar, TGAColor &amp;color){
+    float intensity = varying_intensity * bar; //interpolate intensity for current Pixel
+    if (intensity &gt; .85)  intensity = 1;
+    else if (intensity &gt; .60) intensity = .80;
+    else if (intensity &gt; .45) intensity = .60;
+    else if (intensity &gt; .30) intensity = .45;
+    else if (intensity &gt; .15) intensity = .30;
+    else intensity = 0;
+    color = TGAColor(255,255,255)*intensity;
+    return false; // do not discard pixel
+  }</code></pre></div>
+
+<p><img src="images/gouraud_shading2.png" alt=""></p>
+
+<p>有点卡通效果。</p>
+
+<h2 id="toc_26">Phong着色</h2>
+
+<p>Gouround 着色看起来不错，但是也存在问题，就是当物体距离‘点光源’很近的时候，这个可以参考<a href="https://zhuanlan.zhihu.com/p/64523601">[从零开始计算机图形学]之十八Gouraud着色</a>的缺陷部分。</p>
+
+<ul>
+<li>平面着色： 每个三角形只计算一个光照</li>
+<li>Gouraud着色： 每个三角形计算三个光照，同时针对三角形中每个点做线性插值</li>
+<li>Phong着色： 我们把三角形的法向量和光照针对每个点P都做线性插值</li>
+</ul>
+
+<p>Phong着色会要求更多的计算，当然也会解决Gourand着色的缺陷</p>
+
+<h1 id="toc_27">Phong光照模型</h1>
+
+<p>先注意标题： Phong光照模型，光照模型并不是着色，不要把这个和Phong着色弄混。</p>
+
+<h2 id="toc_28">再次纹理</h2>
+
+<p>我们再次来看纹理，之前我们添加纹理的时候没有加光照，没有做投影。现在我们把纹理加到我们现有的系统中：</p>
+
+<div><pre><code class="language-C++">struct Shader: public IShader{
+  Vec3f varying_intensity; // write by vertex shader, read by fragment shader
+  mat&lt;2,3,float&gt; varying_uv; // write by vertex shader, read by fragment shader
+
+  virtual Vec4f vertex(int iface, int nthvert){
+    varying_uv.set_col(nthvert, model-&gt;uv(iface, nthvert));
+    varying_intensity[nthvert] = CLAMP(model-&gt;normal(iface, nthvert)*light_dir); // diffuse light intensity
+    Vec4f gl_Vertex = embed&lt;4&gt;(model-&gt;vert(iface, nthvert)); // read the vertex from obj file
+    return ViewPort*Projection*ModelView*gl_Vertex;
+  }
+
+  virtual bool fragment(Vec3f bar, TGAColor &amp;color){
+    float intensity = varying_intensity * bar; //interpolate intensity for current Pixel
+    Vec2f uv = varying_uv * bar; //interpolate uv for current Pixel
+    color = model-&gt;diffuse(uv)*intensity;
+    return false; // do not discard pixel
+  }
+};</code></pre></div>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/12_texture_again">代码</a></p>
+
+<p>最终效果：</p>
+
+<p><img src="images/texture02.png" alt=""></p>
+
+<h2 id="toc_29">法向量插值</h2>
+
+<p>有了这张纹理图，我们就可以根据插值法得到每一个像素的纹理。不禁让人思考，除了纹理，我们还可以把什么也存在图像中呢？答案是-很多：颜色、方向甚至温度。</p>
+
+<p>这张图，如果我们把RGB值翻译成 xyz，那么这张图会给我们每个pixel的法向量值。这样就不仅仅是顶点的法向量了。</p>
+
+<p><img src="images/african_head_nm.png" alt=""></p>
+
+<p>我们像加载法向量，修改shader，再次生成图像：</p>
+
+<p><img src="images/normal_texture.png" alt=""></p>
+
+<p>看起来更加生动,看核心代码，我们读入了每个像素的法向量，根据每个像素做计算，这里也用到了之前写的法向量变换。</p>
+
+<div><pre><code class="language-C++">struct Shader: public IShader{
+  mat&lt;2,3,float&gt; varying_uv; // write by vertex shader, read by fragment shader
+  mat&lt;4,4,float&gt; uniform_M; //Projection*ModelView
+  mat&lt;4,4,float&gt; uniform_MIT; // (Projection*ModelView).invert_transpose()
+
+  virtual Vec4f vertex(int iface, int nthvert){
+    varying_uv.set_col(nthvert, model-&gt;uv(iface, nthvert));
+    Vec4f gl_Vertex = embed&lt;4&gt;(model-&gt;vert(iface, nthvert)); // read the vertex from obj file
+    return ViewPort*Projection*ModelView*gl_Vertex; // transform to screen coords
+  }
+
+  virtual bool fragment(Vec3f bar, TGAColor &amp;color){
+    Vec2f uv = varying_uv*bar; //interpolate uv for current Pixel
+    Vec3f n = proj&lt;3&gt;(uniform_MIT*embed&lt;4&gt;(model-&gt;normal(uv))).normalize(); // transform normal vector
+    Vec3f l = proj&lt;3&gt;(uniform_M  *embed&lt;4&gt;(light_dir)).normalize(); // transfrom light direction
+    float intensity = std::max(0.f, n*l);
+    color = model-&gt;diffuse(uv)*intensity; //uv
+    return false; // do not discard pixel
+  }
+};</code></pre></div>
+
+<p>还需要注意的是从图像中颜色我们用的是TGAColor，它的顺序是bgra.具体的可以看一下在model中新增的normal函数.</p>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/13_normal">代码</a></p>
+
+<h2 id="toc_30">Phong 光照模型</h2>
+
+<p>Phong提出我们可以把最终光的效果看为：</p>
+
+<p>环境 + 漫反射 + 镜面 = Phong</p>
+
+<p><img src="images/phong_light_model.png" alt=""></p>
+
+<p>其实光我们也可以分模型：环境光、方向光、点光源。</p>
+
+<p>specular light 具体的计算式子是：</p>
+
+<p>\[
+I_s = I_L(\frac{\overrightarrow{N} \cdot \overrightarrow{V}}{|\overrightarrow{N}| |\overrightarrow{V}|})^s
+\]</p>
+
+<ul>
+<li>\(I_L\): 光射入方向</li>
+<li>\(\overrightarrow{N}\): 法向量</li>
+<li>\(\overrightarrow{V}\): 摄像机方向</li>
+<li>s：高光</li>
+</ul>
+
+<p>所有的光加起来的公式是：</p>
+
+<p>\[
+I = I_A + \sum I_D\frac{I_D \cdot \overrightarrow{N}}{|I_D||\overrightarrow{N}|} + \sum I_L(\frac{\overrightarrow{N} \cdot \overrightarrow{V}}{|\overrightarrow{N}| |\overrightarrow{V}|})^s
+\]</p>
+
+<p>完整的关于这个式子推理可见：</p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/63343562">[从零开始计算机图形学]之二漫反射</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/63350881">[从零开始计算机图形学]之三高光</a></p>
+
+<p>我们同样用一幅图来表示图中每个像素所在点的反射（镜面）系数。加载上镜面系数，看最终结果：</p>
+
+<p><img src="images/phong_light.png" alt=""></p>
+
+<p>可以看到右侧脸，脖子还是有比较明显的‘镜面高光’效果。cool.</p>
+
+<p>核心代码:</p>
+
+<div><pre><code class="language-C++">struct Shader: public IShader{
+  mat&lt;2,3,float&gt; varying_uv; // write by vertex shader, read by fragment shader
+  mat&lt;4,4,float&gt; uniform_M; //Projection*ModelView
+  mat&lt;4,4,float&gt; uniform_MIT; // (Projection*ModelView).invert_transpose()
+
+  virtual Vec4f vertex(int iface, int nthvert){
+    varying_uv.set_col(nthvert, model-&gt;uv(iface, nthvert));
+    Vec4f gl_Vertex = embed&lt;4&gt;(model-&gt;vert(iface, nthvert)); // read the vertex from obj file
+    return ViewPort*Projection*ModelView*gl_Vertex; // transform to screen coords
+  }
+
+  virtual bool fragment(Vec3f bar, TGAColor &amp;color){
+    Vec2f uv = varying_uv*bar; //interpolate uv for current Pixel
+    Vec3f n = proj&lt;3&gt;(uniform_MIT*embed&lt;4&gt;(model-&gt;normal(uv))).normalize(); // transform normal vector
+    Vec3f l = proj&lt;3&gt;(uniform_M  *embed&lt;4&gt;(light_dir)).normalize(); // transfrom light direction
+    Vec3f r = (n*(n*l*2.f) - l).normalize(); // reflected light
+    float spec = pow(std::max(r.z, 0.0f), model-&gt;specular(uv)); // we&#39;re looking from z-axis, 
+    float diff = std::max(0.f, n*l);
+    TGAColor c = model-&gt;diffuse(uv);
+    color = c;
+    for (int i = 0; i &lt; 3; i++) color[i] = std::min&lt;float&gt;(5+c[i]*(diff+.6*spec),255);
+    return false; // do not discard pixel
+  }
+};</code></pre></div>
+
+<p>这里的fragment shader中我们增加了r作为镜面反射光，然后镜面系数是从图像中读出，同样，我们也只会取大于0的部分。</p>
+
+<div><pre><code class="language-C++">    for (int i = 0; i &lt; 3; i++) color[i] = std::min&lt;float&gt;(5+c[i]*(diff+.6*spec),255); \\5 是环境光，
+    \\diff， spec*0.6这里有点随意分配的意思（一般来说我们所有光的强度加在一起最好不要超过1)，
+    \\然后最大值是255，毕竟颜色不能超过这里。</code></pre></div>
+
+<p><a href="https://github.com/KrisYu/tinyrender/tree/master/code/14_phong_light">代码</a></p>
+
+
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</body>
+
+</html>
